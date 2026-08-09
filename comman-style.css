@@ -2,3 +2,8 @@
   color:red;
   display:block;
 }
+
+.home-button:hover{
+  color:green;
+  font-weight:bold;
+}
