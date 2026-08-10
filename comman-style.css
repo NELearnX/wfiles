@@ -1,9 +1,96 @@
-.home-button{
+.home-button, a.navig-a{
   color:red;
-  display:block;
+  display:inline-block;
 }
 
-.home-button:hover{
+.home-button:hover, a.navig-a{
   color:green;
   font-weight:bold;
+}
+
+
+a.gdrive-file{
+  display:inline-block;
+  /padding:3px; 
+  margin:3px;
+}
+
+x.gdrive-file{
+	border:1px dotted blue;
+  color:red;
+}
+
+x.gdrive-file:hover{
+	border:1px solid blue;
+  color:green;
+  font-weight:bold;
+}
+
+div.card:hover{
+	background-color:#eeeeee;
+}
+div.card{
+	border:1px dotted blue;
+	margin-top:5px;
+	padding:5px;
+}
+
+
+/*2. The Text Lift & Glow*/
+
+del01_a {
+  color: #2ecc71;
+  text-decoration: none;
+  display: inline-block; /* Required for transform vertical movement */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Move up and add shadow on hover */
+
+del01_a:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 4px 8px rgba(46, 204, 113, 0.4);
+}
+
+
+/* 1. The Underline Slide (Left to Right) */
+del02_a {
+  color: #0076ff;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+}
+
+/* Create the pseudo-element underline */
+del02_a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #0076ff;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+
+
+/*
+3. The Background Grow (Button Effect)This transforms a standard text link into a solid, rounded button upon hover.css
+*/
+a {
+  color: #e74c3c;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 2px solid #e74c3c;
+  transition: background-color 2s ease, color 0.2s ease;
+}
+
+/* Invert colors on hover */
+a:hover {
+  background-color: #e74c3c;
+  color: #ffffff;
 }
