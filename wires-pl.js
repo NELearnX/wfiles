@@ -38,7 +38,7 @@ function wirePriceHTML(){
 	var oldH = "";
 	var html = "";
 
-	for(var i=0;<DATA.lenght;i++){
+	for(var i=0; i<DATA.length; i++){
 		var newH = DATA[i][0];
 		var xLink = DATA[i][1];
 		var displayName = DATA[i][2];
